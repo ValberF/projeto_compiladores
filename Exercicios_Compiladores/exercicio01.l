@@ -29,11 +29,12 @@ utilize os exemplos no diretório "flex" como ponto de partida.
 %}
 
 /* Definições de Nomes */
+
+RESERVADAS "#include"|"stdio.h"|"int"|"main"|"unsigned int"|"print"|"if"
 IDENTIFICADOR       [_a-zA-Z][_a-zA-Z0-9]*  
 OPERADOR_MATEMATICO "+"|"-"|"*"|"/"|">"|">="|"<"|"<="|"**"|"="
 INTEIROS [-+]?[0-9]+ 
 FLOATS [-+]?[0-9]*\.?[0-9]*
-RESERVADAS "#include"|"stdio.h"|"int"|"main"|"unsigned int"|"print"|"if"
 SIMBOLOS "("|")"|"{"|"}"
 
 
@@ -47,11 +48,12 @@ SIMBOLOS "("|")"|"{"|"}"
         padrão  ação
 
     */
+    
+{RESERVADAS}         {printf("<reservadas, %s>", yytext); contador++;}
 {IDENTIFICADOR}         {printf("<identificador, %s>", yytext); contador++;}
 {OPERADOR_MATEMATICO}   {printf("<op_mat, %s>", yytext); contador++;}
 {INTEIROS}         {printf("<inteiros, %s>", yytext); contador++;}
 {FLOATS}   {printf("<float, %s>", yytext); contador++;}
-{RESERVADAS}         {printf("<reservadas, %s>", yytext); contador++;}
 {SIMBOLOS}   {printf("<simbolos, %s>", yytext); contador++;}
 <<EOF>>                 return 0;
     
