@@ -1,0 +1,17 @@
+#include <stdio.h>
+typedef struct{
+  char nome;
+  char posicao;
+  int  nrCamisa;
+}JOGADOR;
+int main() {
+	int x = 9;
+	const int x = 10;  
+  	float y = 3.4444;
+  	unsigned int = 10;
+  	if (x > 10) {
+    		print("X é maior que dez!")
+  	}
+	return 0;
+}
+
