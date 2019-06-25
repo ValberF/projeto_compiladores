@@ -35,17 +35,17 @@ RESERVADAS		        "typedef"|"const"|"#include"|"main"|"printf"|"scanf"|"asm"|"
 TIPOS 		        	"int"|"float"|"char"|"double"|"unsigned int"|"unsigned char"|"short int"|"long int"|"long double"|"unsigned long int"|"unsigned short int"
 STRUCT      			"struct"|"typedef struct"
 ENDERECO		        [&]([_a-zA-Z][_a-zA-Z0-9]*)
-OPERADOR_CONDICIONAL 	    "if"|"else"|"else if"|"switch case"|"default"
-OPERADOR_REPETICAO 	        "for"|"while"|"do"
-OPERADOR_MATEMATICO 	    "+"|"-"|"*"|"/"|"%"
-OPERADOR_LOGICO 	        "||"|"&&"|"!"
-OPERADOR_BIT 		        "&"|"|"|"^"|"~"|">>"|"<<"
-OPERADOR_COMPARACAO 	    ">="|"<="|"!="|"=="|">"|"<"
-OPERADOR_ATRIBUICAO 	    "="|"+="|"-="|"*="|"/="|"%="|"<<="|">>="|"&="|"^="|"|="
+OPERADOR_CONDICIONAL 	        "if"|"else"|"else if"|"switch case"|"default"
+OPERADOR_REPETICAO 	            "for"|"while"|"do"
+OPERADOR_MATEMATICO 	        "+"|"-"|"*"|"/"|"%"
+OPERADOR_LOGICO 	            "||"|"&&"|"!"
+OPERADOR_BIT 		            "&"|"|"|"^"|"~"|">>"|"<<"
+OPERADOR_COMPARACAO 	        ">="|"<="|"!="|"=="|">"|"<"
+OPERADOR_ATRIBUICAO 	        "="|"+="|"-="|"*="|"/="|"%="|"<<="|">>="|"&="|"^="|"|="
 INTEIROS 		        [-+]?[0-9]+ 
 FLOATS 			        [-+]?[0-9]+\.?[0-9]+
 SIMBOLOS 		        "("|")"|"{"|"}"|","
-IDENTIFICADOR       	[_a-zA-Z][_a-zA-Z0-9]* 
+IDENTIFICADOR       	        [_a-zA-Z][_a-zA-Z0-9]* 
 STRING 			        \"([^\\\"]|\\.)*\"
 CARACTER		        (\')(.)(\')
 VETOR 			        ([_a-zA-Z][_a-zA-Z0-9]*)(\[)([0-9]+)|([a-zA-Z]+)(\])
