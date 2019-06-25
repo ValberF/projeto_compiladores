@@ -36,10 +36,10 @@ TIPOS 		        	"int"|"float"|"char"|"double"|"unsigned int"|"unsigned char"|"s
 STRUCT      			"struct"|"typedef struct"
 ENDERECO		        [&]([_a-zA-Z][_a-zA-Z0-9]*)
 OPERADOR_CONDICIONAL 	        "if"|"else"|"else if"|"switch case"|"default"
-OPERADOR_REPETICAO 	            "for"|"while"|"do"
+OPERADOR_REPETICAO 	           "for"|"while"|"do"
 OPERADOR_MATEMATICO 	        "+"|"-"|"*"|"/"|"%"
-OPERADOR_LOGICO 	            "||"|"&&"|"!"
-OPERADOR_BIT 		            "&"|"|"|"^"|"~"|">>"|"<<"
+OPERADOR_LOGICO 	           "||"|"&&"|"!"
+OPERADOR_BIT 		           "&"|"|"|"^"|"~"|">>"|"<<"
 OPERADOR_COMPARACAO 	        ">="|"<="|"!="|"=="|">"|"<"
 OPERADOR_ATRIBUICAO 	        "="|"+="|"-="|"*="|"/="|"%="|"<<="|">>="|"&="|"^="|"|="
 INTEIROS 		        [-+]?[0-9]+ 
