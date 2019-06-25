@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "biblioteca.h"
+
 typedef struct{
   char nome;
   char posicao;
