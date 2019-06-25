@@ -29,28 +29,27 @@ utilize os exemplos no diretório "flex" como ponto de partida.
 %}
 
 /* Definições de Nomes */
-BIBLIOTECA 		[\<][a-z]*\.[h][\>]
-RESERVADAS	"typedef"|"const"|"#include"|"main"|"printf"|"scanf"|"asm"|"auto"|"break"|"continue"|"enum"|"extern"|"goto"|"register"|"return"|"signed"|"sizeof"|"static"|"union"|"void"|"volatile"
-TIPOS "int"|"float"|"char"|"double"|"unsigned int"|"unsigned char"|"short int"|"long int"|"long double"|"unsigned long int"|"unsigned short int"
-STRUCT "struct"|"typedef struct"
-ENDERECO				[&]([_a-zA-Z][_a-zA-Z0-9]*)
-OPERADOR_CONDICIONAL "if"|"else"|"else if"|"switch case"|"default"
-OPERADOR_REPETICAO "for"|"while"|"do"
-OPERADOR_MATEMATICO "+"|"-"|"*"|"/"|"%"
-OPERADOR_LOGICO "||"|"&&"|"!"
-OPERADOR_BIT "&"|"|"|"^"|"~"|">>"|"<<"
-OPERADOR_COMPARACAO ">="|"<="|"!="|"=="|">"|"<"
-OPERADOR_ATRIBUICAO "="|"+="|"-="|"*="|"/="|"%="|"<<="|">>="|"&="|"^="|"|="
-INTEIROS [-+]?[0-9]+ 
-FLOATS [-+]?[0-9]+\.?[0-9]+
-SIMBOLOS "("|")"|"{"|"}"|","
-IDENTIFICADOR       [_a-zA-Z][_a-zA-Z0-9]* 
-STRING 		\"([^\\\"]|\\.)*\"
-CARACTER 								(\')(.)(\')
-VETOR 									([_a-zA-Z][_a-zA-Z0-9]*)(\[)([0-9]+)|([a-zA-Z]+)(\])
-FIM_LINHA			";"
 
-
+BIBLIOTECA 		        [\<][a-z]*\.[h][\>]
+RESERVADAS		        "typedef"|"const"|"#include"|"main"|"printf"|"scanf"|"asm"|"auto"|"break"|"continue"|"enum"|"extern"|"goto"|"register"|"return"|"signed"|"sizeof"|"static"|"union"|"void"|"volatile"
+TIPOS 		        	"int"|"float"|"char"|"double"|"unsigned int"|"unsigned char"|"short int"|"long int"|"long double"|"unsigned long int"|"unsigned short int"
+STRUCT      			"struct"|"typedef struct"
+ENDERECO		        [&]([_a-zA-Z][_a-zA-Z0-9]*)
+OPERADOR_CONDICIONAL 	"if"|"else"|"else if"|"switch case"|"default"
+OPERADOR_REPETICAO 	    "for"|"while"|"do"
+OPERADOR_MATEMATICO 	"+"|"-"|"*"|"/"|"%"
+OPERADOR_LOGICO 	    "||"|"&&"|"!"
+OPERADOR_BIT 		    "&"|"|"|"^"|"~"|">>"|"<<"
+OPERADOR_COMPARACAO 	">="|"<="|"!="|"=="|">"|"<"
+OPERADOR_ATRIBUICAO 	"="|"+="|"-="|"*="|"/="|"%="|"<<="|">>="|"&="|"^="|"|="
+INTEIROS 		        [-+]?[0-9]+ 
+FLOATS 			        [-+]?[0-9]+\.?[0-9]+
+SIMBOLOS 		        "("|")"|"{"|"}"|","
+IDENTIFICADOR       	[_a-zA-Z][_a-zA-Z0-9]* 
+STRING 			        \"([^\\\"]|\\.)*\"
+CARACTER		        (\')(.)(\')
+VETOR 			        ([_a-zA-Z][_a-zA-Z0-9]*)(\[)([0-9]+)|([a-zA-Z]+)(\])
+FIM_LINHA		        ";"
 
 /* FIM DA SEÇÃO DE DEFINIÇÕES */
 
@@ -59,28 +58,28 @@ FIM_LINHA			";"
         Uma entrada por linha no formato:
         
         padrão  ação
-
     */
-{OPERADOR_REPETICAO}   {printf("\n| repeticao: %s |", yytext); contador++;}
-{OPERADOR_CONDICIONAL}   {printf("\n| condicionais: %s |", yytext); contador++;}
-{TIPOS}   {printf("\n| tipos: %s |", yytext); contador++;}
-{BIBLIOTECA}   {printf("\n| biblioteca: %s |", yytext); contador++;}
-{OPERADOR_LOGICO}   {printf("\n| operador logico: %s |", yytext); contador++;}
-{OPERADOR_BIT}   {printf("\n| operador bit a bit: %s |", yytext); contador++;}
-{OPERADOR_COMPARACAO}   {printf("\n| operador comparacao: %s |", yytext); contador++;}
-{OPERADOR_ATRIBUICAO}   {printf("\n| Operador atribuiçao: %s |", yytext); contador++;}
-{STRUCT}   {printf("\n| struct: %s |", yytext); contador++;}
-{OPERADOR_MATEMATICO}   {printf("\n| op_mat: %s |", yytext); contador++;}
-{INTEIROS}         {printf("\n| inteiros: %s |", yytext); contador++;}
-{FLOATS}   {printf("\n| float: %s |", yytext); contador++;}
-{RESERVADAS}         {printf("\n| reservadas: %s |", yytext); contador++;}
-{SIMBOLOS}   {printf("\n| simbolos: %s |", yytext); contador++;}
-{STRING}         {printf("\n| string: %s |", yytext); contador++;}
-{CARACTER}	{printf("\n| caracter: %s |", yytext); contador++;}
-{IDENTIFICADOR}         {printf("\n| identificador: %s |", yytext); contador++;}
-{VETOR}	{printf("\n| vetor: %s", yytext); contador++;}
-{FIM_LINHA} {printf("\n| simbolo fim de linha: %s|", yytext); contador++;}
-{ENDERECO}	{printf("\n| endereço: %s|", yytext); contador++;}
+
+{OPERADOR_REPETICAO}   		{printf("\n| repeticao: %s |", yytext); contador++;}
+{OPERADOR_CONDICIONAL} 		{printf("\n| condicionais: %s |", yytext); contador++;}
+{TIPOS}   			        {printf("\n| tipos: %s |", yytext); contador++;}
+{BIBLIOTECA}   			    {printf("\n| biblioteca: %s |", yytext); contador++;}
+{OPERADOR_LOGICO}   		{printf("\n| operador logico: %s |", yytext); contador++;}
+{OPERADOR_BIT}   	    	{printf("\n| operador bit a bit: %s |", yytext); contador++;}
+{OPERADOR_COMPARACAO}   	{printf("\n| operador comparacao: %s |", yytext); contador++;}
+{OPERADOR_ATRIBUICAO}   	{printf("\n| Operador atribuiçao: %s |", yytext); contador++;}
+{STRUCT}   			        {printf("\n| struct: %s |", yytext); contador++;}
+{OPERADOR_MATEMATICO} 		{printf("\n| op_mat: %s |", yytext); contador++;}
+{INTEIROS}         		    {printf("\n| inteiros: %s |", yytext); contador++;}
+{FLOATS}   			        {printf("\n| float: %s |", yytext); contador++;}
+{RESERVADAS}         		{printf("\n| reservadas: %s |", yytext); contador++;}
+{SIMBOLOS}   			    {printf("\n| simbolos: %s |", yytext); contador++;}
+{STRING}         		    {printf("\n| string: %s |", yytext); contador++;}
+{CARACTER}			        {printf("\n| caracter: %s |", yytext); contador++;}
+{IDENTIFICADOR}         	{printf("\n| identificador: %s |", yytext); contador++;}
+{VETOR}				        {printf("\n| vetor: %s", yytext); contador++;}
+{FIM_LINHA} 			    {printf("\n| simbolo fim de linha: %s|", yytext); contador++;}
+{ENDERECO}			        {printf("\n| endereço: %s|", yytext); contador++;}
 
 
 <<EOF>>                 return 0;
