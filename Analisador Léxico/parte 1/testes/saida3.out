@@ -1,0 +1,133 @@
+Iniciando Análise Léxica...
+---
+
+| reservadas: #include | 
+| biblioteca: <stdio.h> |
+
+| reservadas: #include | 
+| biblioteca: "biblioteca.h" |
+
+| reservadas: #include | 
+| biblioteca: <math.h> |
+
+
+| struct: typedef struct |
+| simbolos: { |
+  
+| tipos: char | 
+| identificador: nome |
+| simbolo fim de linha: ;|
+  
+| tipos: char | 
+| identificador: posicao |
+| simbolo fim de linha: ;|
+  
+| tipos: int |  
+| identificador: nrCamisa |
+| simbolo fim de linha: ;|
+  
+| tipos: double | 
+| identificador: salario |
+| simbolo fim de linha: ;|
+
+| simbolos: } |
+| identificador: JOGADOR |
+| simbolo fim de linha: ;|
+
+
+
+| simbolos: } |
+
+| tipos: int | 
+| reservadas: main |
+| simbolos: ( |
+| simbolos: ) | 
+| simbolos: { |
+	
+| identificador: JOGADOR | 
+| identificador: j |
+| simbolo fim de linha: ;|	
+	
+| tipos: long int | 
+| identificador: num | 
+| Operador atribuiçao: = | 
+| inteiros: 34 |
+| simbolo fim de linha: ;|
+	
+| reservadas: const | 
+| tipos: int | 
+| identificador: x | 
+| Operador atribuiçao: = | 
+| inteiros: 10 |
+| simbolo fim de linha: ;|  
+  	
+| tipos: double | 
+| identificador: y | 
+| Operador atribuiçao: = | 
+| float: 12.4543 |
+| simbolo fim de linha: ;|
+  	
+| tipos: unsigned int | 
+| Operador atribuiçao: = | 
+| inteiros: 10 |
+| simbolo fim de linha: ;|
+	
+| tipos: int | 
+| vetor: v[10] 
+| Operador atribuiçao: = | 
+| simbolos: { |
+| inteiros: 1 |
+| simbolos: , | 
+| inteiros: 2 |
+| simbolos: , | 
+| inteiros: 3 |
+| simbolos: , | 
+| inteiros: 4 |
+| simbolos: , | 
+| inteiros: 5 |
+| simbolos: , | 
+| inteiros: 6 |
+| simbolos: , | 
+| inteiros: 7 |
+| simbolos: , | 
+| inteiros: 8 |
+| simbolos: , | 
+| inteiros: 9 |
+| simbolos: , | 
+| inteiros: 10 |
+| simbolos: } |
+| simbolo fim de linha: ;|
+	
+| reservadas: scanf |
+| simbolos: ( |
+| Tipo: "%d" |
+| simbolos: , | 
+| endereço: &x|
+| simbolos: ) |
+| simbolo fim de linha: ;|
+  	
+| condicionais: if | 
+| simbolos: ( |
+| vetor: v[1] 
+| operador comparacao: == | 
+| inteiros: 1 |
+| simbolos: ) | 
+| simbolos: { |
+    		
+| reservadas: printf |
+| simbolos: ( |
+| string: "Igual" |
+| simbolos: ) |
+| simbolo fim de linha: ;|
+  	
+| simbolos: } |
+	
+| reservadas: return | 
+| inteiros: 0 |
+| simbolo fim de linha: ;|
+
+| simbolos: } |
+
+Foram encontradas 101 ocorrências.
+---
+Ánalise Finalizada!

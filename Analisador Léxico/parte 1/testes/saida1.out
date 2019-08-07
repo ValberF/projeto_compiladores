@@ -1,0 +1,111 @@
+| reservadas: #include | 
+| biblioteca: <stdio.h> |
+
+| reservadas: #include | 
+| biblioteca: "biblioteca.h" |
+
+
+| struct: typedef struct |
+| simbolos: { |
+  
+| tipos: char | 
+| identificador: nome |
+| simbolo fim de linha: ;|
+  
+| tipos: char | 
+| identificador: posicao |
+| simbolo fim de linha: ;|
+  
+| tipos: int |  
+| identificador: nrCamisa |
+| simbolo fim de linha: ;|
+
+| simbolos: } |
+| identificador: JOGADOR |
+| simbolo fim de linha: ;|
+
+
+
+| simbolos: } |
+
+| tipos: int | 
+| reservadas: main |
+| simbolos: ( |
+| simbolos: ) | 
+| simbolos: { |
+	
+| tipos: int | 
+| identificador: x | 
+| Operador atribuiçao: = | 
+| inteiros: 9 |
+| simbolo fim de linha: ;|
+	
+| reservadas: const | 
+| tipos: int | 
+| identificador: x | 
+| Operador atribuiçao: = | 
+| inteiros: 10 |
+| simbolo fim de linha: ;|  
+  	
+| tipos: float | 
+| identificador: y | 
+| Operador atribuiçao: = | 
+| float: 3.4444 |
+| simbolo fim de linha: ;|
+  	
+| tipos: unsigned int | 
+| Operador atribuiçao: = | 
+| inteiros: 10 |
+| simbolo fim de linha: ;|
+	
+| tipos: int | 
+| vetor: _v[1]
+| simbolo fim de linha: ;|
+	
+| tipos: char | 
+| vetor: v2[2] 
+| Operador atribuiçao: = | 
+| simbolos: { |
+| caracter: 'a' |
+| simbolos: , |
+| caracter: 'b' |
+| simbolos: , |
+| caracter: 'c' |
+| simbolos: } |
+| simbolo fim de linha: ;|
+	
+| reservadas: scanf |
+| simbolos: ( |
+| Tipo: "%d" |
+| simbolos: , | 
+| endereço: &x|
+| simbolos: ) |
+| simbolo fim de linha: ;|
+  	
+| condicionais: if | 
+| simbolos: ( |
+| identificador: x | 
+| operador comparacao: > | 
+| inteiros: 10 |
+| simbolos: ) | 
+| simbolos: { |
+    		
+| reservadas: printf |
+| simbolos: ( |
+| string: "X é maior que dez! E %d é 10" |
+| simbolos: , | 
+| identificador: x |
+| simbolos: ) |
+| simbolo fim de linha: ;|
+  	
+| simbolos: } |
+	
+| reservadas: return | 
+| inteiros: 0 |
+| simbolo fim de linha: ;|
+
+| simbolos: } |
+
+Foram encontradas 84 ocorrências.
+---
+Ánalise Finalizada!
