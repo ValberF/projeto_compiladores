@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include "biblioteca.h"
+#include <math.h>
+
+typedef struct{
+  char nome;
+  char posicao;
+  int  nrCamisa;
+  double salario;
+}JOGADOR;
+
+
+}
+int main() {
+	JOGADOR j;	
+	long int num = 34;
+	const int x = 10;  
+  	double y = 12.4543;
+  	unsigned int = 10;
+	int v[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+	scanf("%d", &x);
+  	if (v[1] == 1) {
+    		printf("Igual");
+  	}
+	return 0;
+}
+

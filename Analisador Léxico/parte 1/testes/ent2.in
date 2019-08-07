@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include "biblioteca.h"
+
+typedef struct{
+  char nome;
+  char posicao;
+  int  nrCamisa;
+}JOGADOR;
+
+
+}
+int main() {
+	JOGADOR j;	
+	long int num = 34;
+	const int x = 10;  
+  	double y = 12.4543;
+  	unsigned int = 10;
+	int v[10];
+	scanf("%d", &x);
+  	if (j.nome == "Joao") {
+    		printf("COrreto");
+  	}
+	return 0;
+}
+
