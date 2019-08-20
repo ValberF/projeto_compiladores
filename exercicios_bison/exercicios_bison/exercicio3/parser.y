@@ -119,7 +119,6 @@ No* novo_no(char token[50], No** filhos, int num_filhos) {
 }
 
 void imprimir_arvore(No* raiz) {
-    //if(raiz == NULL) { printf("#"); return; }
     printf("(%s)", raiz->token);
     int i;
     printf(" -> ");
@@ -127,15 +126,6 @@ void imprimir_arvore(No* raiz) {
         imprimir_arvore(raiz->filhos[i]);
         if(raiz->filhos[i]->filhos == NULL) printf("(null)\n");
     }
-   /* if(raiz == NULL) { printf("***"); return; }
-    printf("(%s)", raiz->token);
-    int i = 0;
-    while(raiz->filhos[i] != NULL){
-        printf("->");
-        imprimir_arvore(raiz->filhos[i]);
-        
-    }
-    */
 }
 
 
